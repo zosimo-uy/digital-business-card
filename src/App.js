@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import  Container  from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Hero from './components/Hero';
+import {user} from './data/user'
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+
+// https://github.com/pinkdollar123/digital-business-card.git
+
 
 function App() {
+  const hero = user.map(item => {
+    return (
+      <Hero 
+        key={item.id}
+        {...item}
+      />
+    )
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className='min-vh-100 business-card'>
+      <Row>
+        <Col md sm={6} 
+        className='d-flex justify-content-center align-items-center '>
+          {hero}
+        </Col>
+        <Col md sm={6} 
+        className='d-flex align-items-center'>
+          <Row>
+            <Col>
+            <Skills />
+            <Projects />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
