@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/digital-business-card/static/css/main.18185754.css",
+    "main.js": "/digital-business-card/static/js/main.f5f53fc4.js",
+    "static/js/787.bc412fff.chunk.js": "/digital-business-card/static/js/787.bc412fff.chunk.js",
+    "static/media/breatheme.png": "/digital-business-card/static/media/breatheme.6fdca357ee4899fefe7c.png",
+    "static/media/kodework.png": "/digital-business-card/static/media/kodework.43fa50286add45daaf4c.png",
+    "static/media/ecal.png": "/digital-business-card/static/media/ecal.97c36f66727b84bfeb03.png",
+    "static/media/soulshine.png": "/digital-business-card/static/media/soulshine.0ee232c03d508a235285.png",
+    "static/media/patientform.png": "/digital-business-card/static/media/patientform.ee32ded2c7a63e25804d.png",
+    "static/media/codingjournal.png": "/digital-business-card/static/media/codingjournal.c465ce030223dcbd7895.png",
+    "static/media/enrollment_uy.png": "/digital-business-card/static/media/enrollment_uy.4915307637a8d8956b45.png",
+    "static/media/portfolio.png": "/digital-business-card/static/media/portfolio.2898cbfd0a4f87d78c18.png",
+    "static/media/hero.jpg": "/digital-business-card/static/media/hero.dd38d239ab148d93ddab.jpg",
+    "index.html": "/digital-business-card/index.html",
+    "main.18185754.css.map": "/digital-business-card/static/css/main.18185754.css.map",
+    "main.f5f53fc4.js.map": "/digital-business-card/static/js/main.f5f53fc4.js.map",
+    "787.bc412fff.chunk.js.map": "/digital-business-card/static/js/787.bc412fff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18185754.css",
+    "static/js/main.f5f53fc4.js"
+  ]
+}
