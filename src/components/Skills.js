@@ -1,15 +1,9 @@
 import  ListGroup  from 'react-bootstrap/ListGroup'
 import Card from 'react-bootstrap/Card'
-// import Button from 'react-bootstrap/Button'
+import Row from 'react-bootstrap/Row'
 import {user} from '../data/user'
-// import { useState } from 'react';
 
 export default function Skills(){
-    // const [show, setShow] = useState(true)
-
-    // function handleChange(){
-    //     setShow(prevState => !prevState)
-    // }
 
     const skills = user[0].skills;
     // const techStacks = user[0].techStack;
@@ -17,7 +11,7 @@ export default function Skills(){
     const mySkills = skills.map((skill, index) =>  
          <ListGroup.Item 
          key={index}
-         className='border-0 me-auto text-center p-1 fw-semibold bg-transparent'>
+         className='border-0 text-center p-1 fw-medium bg-transparent'>
          <p className='p-2 border rounded-3'>{skill}</p>
          </ListGroup.Item>
     )
@@ -31,7 +25,7 @@ export default function Skills(){
     // )
 
     return(
-        <Card style={{ width: '22rem' }} className='border-0 bg-transparent'>
+        <Card style={{ width: '22rem' }} className='border-0 bg-transparent p-2'>
             
             {/* <Button 
             onClick={handleChange}
@@ -44,10 +38,15 @@ export default function Skills(){
             Skills:
             </Card.Title>
 
-            <ListGroup horizontal='sm' className='list-group-flush flex-wrap'>
-            {/* {show ? mySkills : myTechStacks} */}
-            {mySkills}
-            </ListGroup>
+            <Row md={1} sm={1}>
+                <ListGroup 
+                    className='flex-wrap'
+                    variant='flush'
+                    horizontal>
+                    {/* {show ? mySkills : myTechStacks} */}
+                    {mySkills}
+                </ListGroup>
+            </Row>
         </Card>
     )
 }

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import  ListGroup  from 'react-bootstrap/ListGroup';
 import ListGroupItem from 'react-bootstrap/ListGroupItem'
 import Link from './Link';
-
+import Row from 'react-bootstrap/Row'
 
 
 export default function Projects() {
@@ -16,14 +16,15 @@ export default function Projects() {
     }
 
     const myProjects = proj.map((item, index) => (
-        <Carousel.Item key={index}>
-            <img src={require(`../images/${item.coverImg}`)} className='object-fit-cover d-block w-100' alt='Project Cover'/>
+        <Carousel.Item key={index}
+        className='p-2'>
+            <img src={require(`../images/${item.coverImg}`)} className='object-fit-cover d-block w-100 border rounded-2' alt='Project Cover'/>
         </Carousel.Item>
     ));
 
     const myTechStack = selectedProject.stack.map((stack, index) => (
           <ListGroupItem 
-          className='border-0 me-auto text-center p-1 fw-semibold bg-transparent'
+          className='border-0 text-center p-1 fw-medium bg-transparent'
           key={index}>
             <p
             className='p-2 border rounded-3' 
@@ -52,19 +53,23 @@ export default function Projects() {
             </span>
             </p>
 
+            <Row xs={1} md={1} sm={1}
+            className='p-2'>
+            <h4>Technologies</h4>
             <ListGroup 
             variant='flush' 
-            horizontal="sm"
+            horizontal
             className='my-2 flex-wrap'
             >
             {myTechStack}
             </ListGroup>
+            </Row>
         </div>
         <Carousel 
             style={{maxWidth: "34rem"}}
             onSelect={handleSelect}
             activeIndex={proj.indexOf(selectedProject)}
-            className=''>
+            className='border border-2 border-light rounded-4'>
             {myProjects}
         </Carousel>
     </div>

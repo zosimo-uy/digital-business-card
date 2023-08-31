@@ -23,15 +23,15 @@ function App() {
   })
 
   return (
-    <Container className='min-vh-100 business-card'>
+    <Container className='min-vh-100 mt-5 mb-5'>
       <Row>
         <Col md sm={6} 
         className='d-flex justify-content-center align-items-center '>
           {hero}
         </Col>
         <Col md sm={6} 
-        className='d-flex align-items-center'>
-          <Row>
+        className=''>
+          <Row >
             <Col>
             <Skills />
             <Projects />
