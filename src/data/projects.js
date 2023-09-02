@@ -141,6 +141,22 @@ export const proj = [
         id: 8,
         role: "React JS Developer",
         position: "Independent",
+        project: "React Meme Generator",
+        stack: [
+            "React JS",
+            "Javascript", 
+            "HTML",
+            "CSS"
+        ],
+        description: "This is an exercise project for my ReactJS journey, I believe on practice, practice, practice helps a developer to improve the learning curve efficiently",
+        url: "https://pinkdollar123.github.io/meme-generator/",
+        repo: "https://github.com/pinkdollar123/meme-generator",
+        coverImg: "meme-generator.png"
+    },
+    {
+        id: 9,
+        role: "React JS Developer",
+        position: "Independent",
         project: "React Jijitsu",
         stack: [
             "React JS",
