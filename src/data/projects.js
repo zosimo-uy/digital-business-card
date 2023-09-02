@@ -137,5 +137,21 @@ export const proj = [
         repo: "https://github.com/pinkdollar123/zosimouy.io",
         coverImg: "portfolio.png"
     },
+    {
+        id: 8,
+        role: "React JS Developer",
+        position: "Independent",
+        project: "React Jijitsu",
+        stack: [
+            "React JS",
+            "Javascript", 
+            "HTML",
+            "CSS"
+        ],
+        description: "This is an exercise project for my ReactJS journey, I believe on practice, practice, practice helps a developer to improve the learning curve efficiently",
+        url: "https://pinkdollar123.github.io/react-jijitsu/",
+        repo: "https://github.com/pinkdollar123/react-jijitsu",
+        coverImg: "react-jijitsu.png"
+    },
 
 ]
