@@ -13,7 +13,7 @@ export const user = [
        },
        {
         id: 1,
-        gitHub: "https://github.com/pinkdollar123",
+        gitHub: "https://github.com/zosimo-uy",
        },
        {
         id: 2,
