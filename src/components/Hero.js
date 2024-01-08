@@ -47,13 +47,17 @@ export default function Hero(props){
 
       <Card.Body>
         <Card.Title 
-        className='h1 fw-semibold text-white'>
-        About Me</Card.Title>
+        className='fs-3 fw-bold text-white'>
+        I love to adapt to ever-changing technology</Card.Title>
         
         <Card.Text  
-        className='fs-6'>
+        className='fs-5'>
         {props.about}
         </Card.Text>
+        <Link
+          
+        />
+
       </Card.Body>
 
     </Card>
