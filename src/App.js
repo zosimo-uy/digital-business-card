@@ -9,9 +9,6 @@ import {user} from './data/user'
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 
-// https://github.com/pinkdollar123/digital-business-card.git
-
-
 function App() {
   const hero = user.map(item => {
     return (

@@ -15,7 +15,7 @@ export const user = [
         {
         id: 0,
         linkedIn: "https://www.linkedin.com/in/zosimouy21/",
-       },
+        },
        {
         id: 1,
         gitHub: "https://github.com/zosimo-uy",
@@ -27,7 +27,7 @@ export const user = [
        {
         id: 3,
         portfolio: "https://zosimo-uy.github.io/zosimouy.io/about.html",
-       }
+       },
     ]
     },
 ]

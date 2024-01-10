@@ -1,6 +1,6 @@
-export default function Link({url, repo, linkedIn, gitHub, mailTo}){
+export default function Link({url, repo, linkedIn, gitHub, mailTo, portfolio, text}){
     return(
-        (url || repo || linkedIn || gitHub || mailTo) ? (
+        (url || repo || linkedIn || gitHub || mailTo || portfolio) ? (
             <span>
                 {url && (
                 <a
@@ -9,7 +9,7 @@ export default function Link({url, repo, linkedIn, gitHub, mailTo}){
                     rel="noreferrer"
                     className="ms-3 fs-2"
                     >
-                    <i class="bi bi-box-arrow-up-right"></i>
+                    <i class="bi bi-box-arrow-up-right text-warning"></i>
                 </a>
                 )}
                 {
@@ -19,7 +19,7 @@ export default function Link({url, repo, linkedIn, gitHub, mailTo}){
                     target="_blank"
                     rel="noreferrer"
                     className="ms-3 fs-2">
-                    <i className="bi bi-github"></i>
+                    <i className="bi bi-github text-warning"></i>
                 </a>
                 )
                 }
@@ -30,7 +30,7 @@ export default function Link({url, repo, linkedIn, gitHub, mailTo}){
                     target="_blank"
                     rel="noreferrer"
                     className="ms-3 fs-2">
-                <i className="bi bi-github"></i>
+                <i className="bi bi-github text-warning"></i>
                 </a>
                 )
                 }
@@ -41,7 +41,7 @@ export default function Link({url, repo, linkedIn, gitHub, mailTo}){
                     target="_blank"
                     rel="noreferrer"
                     className="ms-3 fs-2">
-                <i className='bi bi-linkedin'></i>
+                <i className='bi bi-linkedin text-warning'></i>
                 </a>
                 )
                 }
@@ -52,9 +52,21 @@ export default function Link({url, repo, linkedIn, gitHub, mailTo}){
                     target="_blank"
                     rel="noreferrer"
                     className="ms-3 fs-2">
-                <i className="bi bi-envelope-at-fill"></i>
+                <i className="bi bi-envelope-at-fill text-warning"></i>
                 </a>
                 )
+                }
+                {
+                portfolio && (
+                <a
+                    href={portfolio}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="ms-3 fs-4 text-decoration-none text-warning">
+                <i class="bi bi-person-lines-fill me-2 text-warning"></i>
+                {text}
+                </a>
+                )    
                 }
             </span>
         ) : null

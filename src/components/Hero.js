@@ -21,6 +21,9 @@ export default function Hero(props){
       
     ))
 
+    
+    const portfolioUrl = webLinks.find((webItem) => webItem.id === 3)?.portfolio;
+
     return (
     <Card style={{ width: '22rem' }} className='border-0 bg-transparent'>
 
@@ -55,7 +58,8 @@ export default function Hero(props){
         {props.about}
         </Card.Text>
         <Link
-          
+          portfolio={portfolioUrl}
+          text="Keep reading my bio"
         />
 
       </Card.Body>
