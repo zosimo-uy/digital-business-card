@@ -1,7 +1,7 @@
 {
   "name": "business-card",
   "version": "0.1.0",
-  "homepage": "https://pinkdollar123.github.io/digital-business-card",
+  "homepage": "https://zosimo-uy.github.io/digital-business-card",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
